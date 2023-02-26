@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />      
+    <link rel="shortcut icon" href="man.png" type="image/x-icon">
+     <link rel="stylesheet" href="estilos/style.css">
+     <link rel="stylesheet" href="estilos/button.css">
+     <link rel="stylesheet" href="estilos/records.css">
+     <link rel="stylesheet" href="estilos/modal.css">
+     <title>MyCrud</title>
+</head>
+<body>
+      <header>
+          <h1 class="header-title">Cadastro de Clientes</h1>
+      </header>
+      <main>
+         <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+         <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+         <div class="modal" id="modal">
+             <div class="modal-content">
+                 <header class="modal-header">
+                      <h2>Novo Cliente</h2>
+                      <span id="modalClose" class="modal-close material-symbols-outlined">
+                           close
+                        </span>
+                 </header>
+                 <form id="form" class="modal-form">
+                    <input type="text"  id="nome" data-index="new" class="modal-field" placeholder="nome Do Cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail Do Cliente" required>
+                    <input type="tel"   id="celular" class="modal-field" placeholder="Celular Do Cliente" required>
+                    <input type="text"  id="cidade" class="modal-field" placeholder="Cidade Do Cliente" required>
+                 </form>
+                 <footer class="modal-footer">
+                     <button  id="salvar" class="button green">Salvar</button>
+                     <button id="cancelar" class="button red">Cancelar</button>
+                 </footer>
+             </div>
+         </div>
+      </main>
+      <footer>
+          Copyright &copy; GuilhermeCarvalho
+      </footer>
+    
+
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
